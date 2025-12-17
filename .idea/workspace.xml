@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00076deb-54f0-4dcd-b908-aad46a489206" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/D-SDAS/portal/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/D-SDAS/portal/portal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/AdminModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/AdminModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/AllocationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/AllocationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/AllocationService.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/AllocationService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/PHP.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/PHP.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/PredictionModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/PredictionModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/PredictionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/PredictionService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/php_backend_logic/predict.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/predict.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/portal/admin_panel.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/admin_panel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D-SDAS/portal/student_dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/D-SDAS/portal/student_dashboard.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="PHP File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/D-SDAS" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../../../php-8.5.0/php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36sds3azjt8GxNgWipPbKjBtisG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;PHP Script.PredictionService.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.admin_panel.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abdii\Videos\D-SDAS\public" />
+      <recent name="C:\Users\abdii\Videos\D-SDAS\D-SDAS\portal" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-PS-253.28294.345" />
+        <option value="bundled-php-predefined-a98d8de5180a-09080813851e-com.jetbrains.php.sharedIndexes-PS-253.28294.345" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00076deb-54f0-4dcd-b908-aad46a489206" name="Changes" comment="" />
+      <created>1765799418554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765799418554</updated>
+      <workItem from="1765799421178" duration="983000" />
+      <workItem from="1765817006384" duration="5000" />
+      <workItem from="1765819886270" duration="2478000" />
+      <workItem from="1765823461516" duration="1283000" />
+      <workItem from="1765825534531" duration="1734000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" /> 
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

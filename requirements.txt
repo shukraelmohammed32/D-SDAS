@@ -1,0 +1,284 @@
+Software Requirements Specification (SRS)
+Project: Dynamic Student Department Allocation System (D-SDAS) – Haramaya University
+Version: 4.0 (Integrated Final)
+Date: December 1, 2025
+=====================================================
+1 INTRODUCTION
+=================================================
+
+1.1 Purpose
+The purpose of this system is to improve the freshman department placement process at Haramaya University.
+The system makes placement transparent, fair, and merit-based by using digital tools.
+It combines predictive analysis, real-time department availability, and strict time limits.
+The system ensures fairness across both Main Campus and Harar Campus.
+All operations follow Haramaya University policies and Ethiopian higher education standards.
+
+1.2 Document Conventions
+Functional Requirements are labeled as FR-XX and have priorities (High, Medium, Low).
+Business Rules are labeled as BR-XX.
+Non-Functional Requirements are labeled as NFR-XX.
+Technical terms are explained in the glossary section.
+Unresolved items are listed in the To Be Determined (TBD) section.
+
+1.3 Intended Audience
+This document is intended for:
+
+Software developers and ICT staff
+
+Registrar Office and Academic Affairs staff
+
+Quality Assurance and testing teams
+
+Department heads, deans, and university management
+
+1.4 Product Scope
+The system is part of the existing student portal.
+It shows real-time department availability and admission probability.
+It removes blind department selection.
+It reduces student stress by providing clear information.
+It improves placement efficiency across campuses.
+It provides full administrative control and monitoring tools.
+
+1.5 References
+Haramaya University Academic Regulations (2024)
+Ethiopian Higher Education Entrance Examination Guidelines (2024)
+Haramaya University ICT Security Policies
+WCAG 2.1 Accessibility Standards
+IEEE and ISO SRS Standards
+
+OVERALL DESCRIPTION
+=======================================================================
+2.1 Product Perspective
+The system works as a module inside the university’s digital infrastructure.
+It connects to backend databases for data storage.
+It is designed to integrate with the main student information system in the future.
+It supports multiple campuses using configurable business rules.
+
+2.2 Product Functions
+
+Student Functions:
+
+View department availability using Green, Yellow, and Red indicators
+
+See admission probability based on entrance exam results
+
+Receive real-time status updates
+
+Access the system easily on mobile devices
+
+Administrative Functions:
+
+Secure login using university credentials
+
+Upload and process placement data files
+
+Manage multiple campuses
+
+Full Amharic and English language support
+
+Automatic data validation
+
+Color-coded status calculation
+
+Support common educational file formats
+
+Responsive design for local devices
+
+2.3 User Classes
+
+Freshman Students:
+
+Goal: View probability and submit a final department choice before deadline
+
+Access: Mobile-first, high usage during a 3-day period
+
+Requirements: Simple design, bilingual interface, no training required
+
+Registrar Office Staff:
+
+Goal: Upload data, configure rules, manage placement rounds
+
+Access: Secure login, audit tracking
+
+Requirements: Role-based permissions and reporting tools
+
+System Administrators:
+
+Goal: Configure system, manage users, monitor performance
+
+Access: Full administrative access
+
+Requirements: Security compliance and audit logging
+
+2.4 Operating Environment
+Supported browsers: Chrome, Firefox, Safari
+Server platforms: Windows Server or Ubuntu Linux
+Database: PostgreSQL (production), SQLite (development)
+Security: HTTPS with TLS encryption
+Designed to work with limited bandwidth
+
+2.5 Design and Implementation Constraints
+Only approved open-source technologies are used.
+The system must be mobile-friendly.
+The system must support Amharic and English.
+No client software installation is required.
+It must work with university network infrastructure.
+It must comply with Ethiopian data privacy laws.
+It must handle 1000+ users with response time under 5 seconds.
+
+2.6 User Documentation
+Student guides in Amharic and English
+Registrar Office operation manuals
+Technical documentation for ICT staff
+All documents follow university branding standards
+
+2.7 Assumptions and Dependencies
+Placement data provided by Registrar Office is accurate.
+Students understand their entrance exam results.
+Internet access is available during placement periods.
+University servers have sufficient capacity.
+Registrar and Academic Affairs staff are available for validation.
+University management provides formal approval.
+
+2.8 Use Cases
+Student: View dashboard, submit choice, edit choice after cooldown
+Administrator: Upload data, configure rules, manage rounds
+System: Calculate probabilities and enforce deadlines
+
+2.9 System Process Flow
+
+Administrator Flow:
+Login → Upload Data → Configure Rules → Start Round → Monitor → Seal Round → Publish Results
+
+Student Flow:
+Login → View Dashboard → Select Department → Confirm → Submit → Wait for Result
+
+System Flow:
+Calculate Probabilities → Allocate Seats → Enforce Timers and Cooldowns
+
+EXTERNAL INTERFACE REQUIREMENTS
+
+User Interface:
+Student interface is single-page, bilingual, and simple.
+Admin interface is secure with dashboards and data tools.
+All interfaces follow accessibility standards and are responsive.
+
+Hardware Interface:
+Server requires multi-core CPU, minimum 8GB RAM, 100GB storage.
+Clients include smartphones, tablets, and desktops.
+
+Software Interface:
+PostgreSQL database
+Read-only access to legacy systems
+Secure file upload directories
+Standard web server environment
+
+Communication Interface:
+HTTPS with TLS encryption
+REST API using JSON
+Secure session cookies
+Compatible with Ethiopian education networks
+
+SYSTEM FEATURES
+
+Feature 1: Student Dashboard and Predictive Allocation
+Priority: High
+
+The system shows real-time admission probabilities using three factors:
+
+Historical data
+
+Implicit student intent
+
+Live choice data
+
+It uses color indicators and percentage values.
+A strict 3-day countdown timer is enforced by the server.
+
+Functional Requirements:
+FR-01 Authenticate student and show admission rank
+FR-02 Show department status with color and probability
+FR-03 Enforce countdown timer
+FR-04 Lock submitted choices with timestamps
+FR-05 Enforce 30-minute cooldown for edits
+FR-06 Provide bilingual support
+FR-07 Maintain availability during updates
+FR-08 Filter departments by campus and college
+
+Feature 2: Registrar Office Data Management
+Priority: High
+
+Administrators can upload data, configure algorithms, and manage rounds.
+
+Functional Requirements:
+FR-09 Secure admin login
+FR-10 Upload placement data files
+FR-11 Configure prediction parameters
+FR-12 Set round start and end times
+FR-13 Seal allocation rounds
+FR-14 View system metrics
+FR-15 Maintain audit logs
+
+SYSTEM LOGIC AND BUSINESS RULES
+
+BR-01 Placement is merit-based but requires submission before deadline
+BR-02 Sealed rounds cannot be changed
+BR-03 Unassigned students move to next round
+
+Algorithms:
+Dynamic Capacity Algorithm calculates actual seats.
+Tri-Factor Algorithm calculates cut-off and probability.
+
+Status Rules:
+Green: Eligible and seats available
+Yellow: Close to cut-off and seats available
+Red: Not eligible
+Departments must be active and have available seats.
+
+NON-FUNCTIONAL REQUIREMENTS
+
+Performance:
+System availability above 99 percent
+Dashboard loads within 5 seconds
+Supports 1000+ users
+
+Security:
+Server-side validation
+Protection against common attacks
+Encrypted communication
+File malware scanning
+
+Quality Attributes:
+Easy to use
+Reliable under weak network
+Easy to maintain
+Compatible with common devices
+
+TECHNICAL STACK
+
+HTML/CSS: User interface layout and design
+PHP (OOP): Business logic and security
+PostgreSQL: Data storage
+JavaScript: Timers and real-time updates
+
+Hosting: Haramaya University data center
+Authentication: University LDAP / Active Directory
+
+APPENDIX
+
+Glossary:
+D-SDAS: Dynamic Student Department Allocation System
+Binding Choice: Final locked department choice
+Traffic Light Status: Green, Yellow, Red indicators
+
+To Be Determined:
+Cut-off formulas
+Yellow status thresholds
+Data formats
+System integration details
+
+Revision History:
+Version 1.0 – Draft
+Version 2.0 – Reviewed
+Version 3.0 – Pending approval
+Version 4.0 – Final 
